@@ -1,0 +1,14 @@
+﻿
+@{
+    ViewBag.Title = "Edit";
+}
+
+<h2>Edit product</h2>
+<form action="/Product/Edit" method="post">
+    <input type="text" name="id" value="@Model.Id" readonly/>
+    <input type="text" name="name" value="@Model.Name" />
+    <input type="text" name="pride" value="@Model.Pride" />
+    <input type="text" name="provider" value="@Model.Provider" />
+    <button type="submit">Submit</button>
+</form>
+
